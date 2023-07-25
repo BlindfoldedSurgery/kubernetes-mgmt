@@ -4,3 +4,6 @@ ingresses:
     secret: tls-hubble-ingress
     issuer: letsencrypt-issuer
     name: hubble
+    service:
+      name: hubble-ui
+      port: 80

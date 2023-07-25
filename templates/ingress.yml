@@ -26,7 +26,7 @@ spec:
         pathType: {{ default "Prefix" .prefix }}
         backend:
           service:
-            {{ $service := $.Values.service }}
+            {{ $service := .service }}
             {{- with $service }}
             name: {{ default "http" .name }}
             port:
