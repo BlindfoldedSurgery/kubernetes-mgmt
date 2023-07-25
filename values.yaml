@@ -1,6 +1,6 @@
-ingress:
-  hosts:
+ingresses:
+  - hosts:
     - name: hubble.woog.chat
-  secret: tls-rancher-ingress
-  issuer: letsencrypt-issuer
-  name: rancher
+    secret: tls-hubble-ingress
+    issuer: letsencrypt-issuer
+    name: hubble
