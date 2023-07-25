@@ -4,6 +4,7 @@ ingresses:
     secret: tls-hubble-ingress
     issuer: letsencrypt-issuer
     name: hubble
+    namespace: kube-system
     service:
       name: hubble-ui
       port: 80
