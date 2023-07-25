@@ -17,6 +17,7 @@ spec:
       - {{ $host.name }}
       {{- end }}
   rules:
+  {{ $ingress := . }}
   {{- range $host := .hosts }}
   {{ with $host }}
   - host: {{ .name }}
@@ -26,8 +27,7 @@ spec:
         pathType: {{ default "Prefix" .prefix }}
         backend:
           service:
-            {{ $service := .service }}
-            {{- with $service }}
+            {{- with $ingress.service }}
             name: {{ default "http" .name }}
             port:
               number: {{ .port }}
