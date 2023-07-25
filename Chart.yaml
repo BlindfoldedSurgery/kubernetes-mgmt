@@ -1,0 +1,5 @@
+apiVersion: v2
+name: kubernetes-mgmt
+description: deploy mgmt interfaces such as ingresses which don't fit into other existing charts
+type: application
+version: 0.1.0
