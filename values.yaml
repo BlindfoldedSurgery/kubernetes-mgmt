@@ -1,6 +1,6 @@
 ingresses:
   - hosts:
-    - name: hubble.woog.chat
+    - name: hubble.blindfolded.surgery
     secret: tls-hubble-ingress
     issuer: letsencrypt-issuer
     name: hubble
